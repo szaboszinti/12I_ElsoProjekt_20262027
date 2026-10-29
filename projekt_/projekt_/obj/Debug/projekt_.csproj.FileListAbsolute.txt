@@ -1,0 +1,5 @@
+C:\Users\szint\source\repos\projekt_\projekt_\obj\Debug\projekt_.csproj.AssemblyReference.cache
+C:\Users\szint\source\repos\projekt_\projekt_\obj\Debug\projekt_.Form1.resources
+C:\Users\szint\source\repos\projekt_\projekt_\obj\Debug\projekt_.Properties.Resources.resources
+C:\Users\szint\source\repos\projekt_\projekt_\obj\Debug\projekt_.csproj.GenerateResource.cache
+C:\Users\szint\source\repos\projekt_\projekt_\obj\Debug\projekt_.csproj.CoreCompileInputs.cache

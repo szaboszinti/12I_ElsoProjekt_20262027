@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\szint\\source\\repos\\projekt_\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|c:\\users\\szint\\source\\repos\\projekt_\\projekt_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4301105E-FB18-4F48-ADC4-D88A8434B364}|projekt_\\projekt_.csproj|solutionrelative:projekt_\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Program.cs",
+              "RelativeDocumentMoniker": "projekt_\\Program.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Program.cs",
+              "RelativeToolTip": "projekt_\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:16:57.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Form1.cs",
+              "RelativeDocumentMoniker": "projekt_\\Form1.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Form1.cs",
+              "RelativeToolTip": "projekt_\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:17:43.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "projekt_\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Form1.Designer.cs",
+              "RelativeToolTip": "projekt_\\Form1.Designer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:08:36.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Hotel.cs",
+              "RelativeDocumentMoniker": "projekt_\\Hotel.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Hotel.cs",
+              "RelativeToolTip": "projekt_\\Hotel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:02:44.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Booking.cs",
+              "RelativeDocumentMoniker": "projekt_\\Booking.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Booking.cs",
+              "RelativeToolTip": "projekt_\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:00:36.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Guest.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Guest.cs",
+              "RelativeDocumentMoniker": "projekt_\\Guest.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Guest.cs",
+              "RelativeToolTip": "projekt_\\Guest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T14:00:06.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Room.cs",
+              "RelativeDocumentMoniker": "projekt_\\Room.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Room.cs",
+              "RelativeToolTip": "projekt_\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T13:59:03.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Form1.cs",
+              "RelativeDocumentMoniker": "projekt_\\Form1.cs",
+              "ToolTip": "C:\\Users\\szint\\source\\repos\\projekt_\\projekt_\\Form1.cs [Design]",
+              "RelativeToolTip": "projekt_\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T13:56:32.417Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
