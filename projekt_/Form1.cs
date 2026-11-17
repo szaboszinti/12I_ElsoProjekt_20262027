@@ -49,5 +49,13 @@ namespace projekt_
             BookingsForm bf = new BookingsForm(hotel);
             bf.Show();
         }
+
+        private void btnStats_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Szobák száma: " + hotel.Rooms.Count +
+                "\nVendégek száma: " + hotel.Guests.Count +
+                "\nFoglalások száma: " + hotel.Bookings.Count);
+        }
     }
 }

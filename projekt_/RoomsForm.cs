@@ -57,5 +57,64 @@ namespace projekt_
                 RefreshGrid();
             }
         }
+
+       
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtRoomNumber.Text))
+            {
+                MessageBox.Show("Előbb válassz ki egy szobát!");
+                return;
+            }
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+
+                hotel.Rooms[index].RoomNumber =
+                    int.Parse(txtRoomNumber.Text);
+
+                hotel.Rooms[index].RoomType =
+                    txtRoomType.Text;
+
+                hotel.Rooms[index].Capacity =
+                    int.Parse(txtCapacity.Text);
+
+                hotel.Rooms[index].PricePerNight =
+                    int.Parse(txtPricePerNight.Text);
+
+                hotel.Rooms[index].IsActive =
+                    chkActive.Checked;
+
+                hotel.SaveAll();
+
+                RefreshGrid();
+
+                MessageBox.Show("A szoba módosítva lett!");
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+
+                txtRoomNumber.Text =
+                    hotel.Rooms[index].RoomNumber.ToString();
+
+                txtRoomType.Text =
+                    hotel.Rooms[index].RoomType;
+
+                txtCapacity.Text =
+                    hotel.Rooms[index].Capacity.ToString();
+
+                txtPricePerNight.Text =
+                    hotel.Rooms[index].PricePerNight.ToString();
+
+                chkActive.Checked =
+                    hotel.Rooms[index].IsActive;
+            }
+        }
     }
 }

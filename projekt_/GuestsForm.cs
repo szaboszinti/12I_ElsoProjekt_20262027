@@ -52,5 +52,57 @@ namespace projekt_
                 RefreshGrid();
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+
+                txtId.Text =
+                    hotel.Guests[index].Id.ToString();
+
+                txtName.Text =
+                    hotel.Guests[index].Name;
+
+                txtPhone.Text =
+                    hotel.Guests[index].Phone;
+
+                txtEmail.Text =
+                    hotel.Guests[index].Email;
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtId.Text))
+            {
+                MessageBox.Show("Előbb válassz ki egy vendéget!");
+                return;
+            }
+
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+
+                hotel.Guests[index].Id =
+                    int.Parse(txtId.Text);
+
+                hotel.Guests[index].Name =
+                    txtName.Text;
+
+                hotel.Guests[index].Phone =
+                    txtPhone.Text;
+
+                hotel.Guests[index].Email =
+                    txtEmail.Text;
+
+                hotel.SaveAll();
+
+                RefreshGrid();
+
+                MessageBox.Show("A vendég módosítva lett!");
+            }
+        }
     }
 }

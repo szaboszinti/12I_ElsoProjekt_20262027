@@ -144,5 +144,94 @@ namespace projekt_
                 MessageBox.Show("Előbb válassz ki egy foglalást!");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+
+                cmbGuest.SelectedValue =
+                    hotel.Bookings[index].GuestId;
+
+                cmbRoom.SelectedValue =
+                    hotel.Bookings[index].RoomNumber;
+
+                dtpCheckIn.Value =
+                    hotel.Bookings[index].CheckIn;
+
+                dtpCheckOut.Value =
+                    hotel.Bookings[index].CheckOut;
+
+                txtGuestCount.Text =
+                    hotel.Bookings[index].GuestCount.ToString();
+            }
+        }
+
+        private void btnEditBooking_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Válassz ki egy foglalást!");
+                return;
+            }
+
+            int index =
+                dataGridView1.SelectedRows[0].Index;
+
+            int roomNumber =
+                Convert.ToInt32(cmbRoom.SelectedValue);
+
+            DateTime from =
+                dtpCheckIn.Value;
+
+            DateTime to =
+                dtpCheckOut.Value;
+
+            if (from >= to)
+            {
+                MessageBox.Show(
+                    "A távozás dátuma nem lehet korábbi vagy azonos!");
+                return;
+            }
+
+            Room room =
+                hotel.Rooms.Find(r =>
+                    r.RoomNumber == roomNumber);
+
+            int guestCount =
+                Convert.ToInt32(txtGuestCount.Text);
+
+            if (guestCount > room.Capacity)
+            {
+                MessageBox.Show(
+                    "Túl sok vendég a kiválasztott szobához!");
+                return;
+            }
+
+            hotel.Bookings[index].GuestId =
+                Convert.ToInt32(cmbGuest.SelectedValue);
+
+            hotel.Bookings[index].RoomNumber =
+                roomNumber;
+
+            hotel.Bookings[index].CheckIn =
+                from;
+
+            hotel.Bookings[index].CheckOut =
+                to;
+
+            hotel.Bookings[index].GuestCount =
+                guestCount;
+
+            hotel.Bookings[index].TotalPrice =
+                hotel.CalculatePrice(room, from, to);
+
+            hotel.SaveAll();
+
+            RefreshGrid();
+
+            MessageBox.Show("Foglalás módosítva!");
+        }
     }
 }

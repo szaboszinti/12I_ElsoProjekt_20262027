@@ -32,6 +32,7 @@
             this.btnGuest = new System.Windows.Forms.Button();
             this.btnBookings = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnStats = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRooms
@@ -67,7 +68,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(252, 223);
+            this.btnSave.Location = new System.Drawing.Point(442, 215);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(238, 41);
             this.btnSave.TabIndex = 3;
@@ -75,11 +76,22 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
+            // btnStats
+            // 
+            this.btnStats.Location = new System.Drawing.Point(68, 215);
+            this.btnStats.Name = "btnStats";
+            this.btnStats.Size = new System.Drawing.Size(238, 41);
+            this.btnStats.TabIndex = 4;
+            this.btnStats.Text = "Statisztika";
+            this.btnStats.UseVisualStyleBackColor = true;
+            this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnBookings);
             this.Controls.Add(this.btnGuest);
@@ -97,6 +109,7 @@
         private System.Windows.Forms.Button btnGuest;
         private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnStats;
     }
 }
 
