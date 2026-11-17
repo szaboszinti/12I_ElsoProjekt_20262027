@@ -36,10 +36,10 @@
             // 
             // btnRooms
             // 
-            this.btnRooms.Location = new System.Drawing.Point(30, 66);
+            this.btnRooms.Location = new System.Drawing.Point(68, 109);
             this.btnRooms.Name = "btnRooms";
             this.btnRooms.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRooms.Size = new System.Drawing.Size(122, 23);
+            this.btnRooms.Size = new System.Drawing.Size(197, 56);
             this.btnRooms.TabIndex = 0;
             this.btnRooms.Text = "Szobák";
             this.btnRooms.UseVisualStyleBackColor = true;
@@ -47,9 +47,9 @@
             // 
             // btnGuest
             // 
-            this.btnGuest.Location = new System.Drawing.Point(30, 109);
+            this.btnGuest.Location = new System.Drawing.Point(281, 109);
             this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(122, 23);
+            this.btnGuest.Size = new System.Drawing.Size(188, 56);
             this.btnGuest.TabIndex = 1;
             this.btnGuest.Text = "Vendégek";
             this.btnGuest.UseVisualStyleBackColor = true;
@@ -57,18 +57,19 @@
             // 
             // btnBookings
             // 
-            this.btnBookings.Location = new System.Drawing.Point(30, 156);
+            this.btnBookings.Location = new System.Drawing.Point(485, 109);
             this.btnBookings.Name = "btnBookings";
-            this.btnBookings.Size = new System.Drawing.Size(122, 23);
+            this.btnBookings.Size = new System.Drawing.Size(195, 56);
             this.btnBookings.TabIndex = 2;
             this.btnBookings.Text = "Foglalások";
             this.btnBookings.UseVisualStyleBackColor = true;
+            this.btnBookings.Click += new System.EventHandler(this.btnBookings_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(241, 109);
+            this.btnSave.Location = new System.Drawing.Point(252, 223);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(238, 41);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Mentés";
             this.btnSave.UseVisualStyleBackColor = true;

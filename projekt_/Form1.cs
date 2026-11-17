@@ -43,5 +43,11 @@ namespace projekt_
             GuestsForm gf = new GuestsForm(hotel);
             gf.Show();
         }
+
+        private void btnBookings_Click(object sender, EventArgs e)
+        {
+            BookingsForm bf = new BookingsForm(hotel);
+            bf.Show();
+        }
     }
 }
