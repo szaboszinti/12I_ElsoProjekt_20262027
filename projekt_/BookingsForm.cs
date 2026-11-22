@@ -233,5 +233,28 @@ namespace projekt_
 
             MessageBox.Show("Foglalás módosítva!");
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            int id;
+
+            if (!int.TryParse(txtSearchBooking.Text, out id))
+            {
+                MessageBox.Show("Adj meg egy számot!");
+                return;
+            }
+
+            dataGridView1.DataSource = null;
+
+            dataGridView1.DataSource =
+                hotel.Bookings
+                .Where(b => b.Id == id)
+                .ToList();
+        }
+
+        private void btnShowAll_Click(object sender, EventArgs e)
+        {
+            RefreshGrid();
+        }
     }
 }

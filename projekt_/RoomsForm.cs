@@ -96,25 +96,49 @@ namespace projekt_
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                int index = dataGridView1.SelectedRows[0].Index;
+            if (e.RowIndex < 0)
+                return;
 
-                txtRoomNumber.Text =
-                    hotel.Rooms[index].RoomNumber.ToString();
+            Room selectedRoom =
+                (Room)dataGridView1.Rows[e.RowIndex].DataBoundItem;
 
-                txtRoomType.Text =
-                    hotel.Rooms[index].RoomType;
+            txtRoomNumber.Text =
+                selectedRoom.RoomNumber.ToString();
 
-                txtCapacity.Text =
-                    hotel.Rooms[index].Capacity.ToString();
+            txtRoomType.Text =
+                selectedRoom.RoomType;
 
-                txtPricePerNight.Text =
-                    hotel.Rooms[index].PricePerNight.ToString();
+            txtCapacity.Text =
+                selectedRoom.Capacity.ToString();
 
-                chkActive.Checked =
-                    hotel.Rooms[index].IsActive;
-            }
+            txtPricePerNight.Text =
+                selectedRoom.PricePerNight.ToString();
+
+            chkActive.Checked =
+                selectedRoom.IsActive;
+        }
+        
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+            string search =
+                txtSearch.Text.ToLower();
+
+            dataGridView1.DataSource = null;
+
+            dataGridView1.DataSource =
+                hotel.Rooms
+                .Where(r =>
+                    r.RoomType.ToLower().Contains(search)
+                    ||
+                    r.RoomNumber.ToString().Contains(search))
+                .ToList();
+        }
+
+        private void btnShowAll_Click(object sender, EventArgs e)
+        {
+            RefreshGrid();
         }
     }
 }

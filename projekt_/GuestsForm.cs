@@ -46,32 +46,40 @@ namespace projekt_
         {
             if(dataGridView1.SelectedRows.Count > 0)
             {
-                int index = dataGridView1.SelectedRows[0].Index;
-                hotel.Guests.RemoveAt(index);
+                Guest selectedGuest =
+    (Guest)dataGridView1.SelectedRows[0].DataBoundItem;
+
+                hotel.Guests.Remove(selectedGuest);
+
                 hotel.SaveAll();
+
                 RefreshGrid();
+
             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                int index = dataGridView1.SelectedRows[0].Index;
 
-                txtId.Text =
-                    hotel.Guests[index].Id.ToString();
+            if (e.RowIndex < 0)
+                return;
 
-                txtName.Text =
-                    hotel.Guests[index].Name;
+            Guest selectedGuest =
+                (Guest)dataGridView1.Rows[e.RowIndex].DataBoundItem;
 
-                txtPhone.Text =
-                    hotel.Guests[index].Phone;
+            txtId.Text =
+                selectedGuest.Id.ToString();
 
-                txtEmail.Text =
-                    hotel.Guests[index].Email;
-            }
+            txtName.Text =
+                selectedGuest.Name;
+
+            txtPhone.Text =
+                selectedGuest.Phone;
+
+            txtEmail.Text =
+                selectedGuest.Email;
         }
+        
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -83,18 +91,19 @@ namespace projekt_
 
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                int index = dataGridView1.SelectedRows[0].Index;
+                Guest selectedGuest =
+                    (Guest)dataGridView1.SelectedRows[0].DataBoundItem;
 
-                hotel.Guests[index].Id =
+                selectedGuest.Id =
                     int.Parse(txtId.Text);
 
-                hotel.Guests[index].Name =
+                selectedGuest.Name =
                     txtName.Text;
 
-                hotel.Guests[index].Phone =
+                selectedGuest.Phone =
                     txtPhone.Text;
 
-                hotel.Guests[index].Email =
+                selectedGuest.Email =
                     txtEmail.Text;
 
                 hotel.SaveAll();
@@ -103,6 +112,29 @@ namespace projekt_
 
                 MessageBox.Show("A vendég módosítva lett!");
             }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string search =
+    txtSearch.Text.ToLower();
+
+            dataGridView1.DataSource = null;
+
+            dataGridView1.DataSource =
+                hotel.Guests
+                .Where(g =>
+                    g.Name.ToLower().Contains(search)
+                    ||
+                    g.Email.ToLower().Contains(search)
+                    ||
+                    g.Phone.Contains(search))
+                .ToList();
+        }
+
+        private void btnShowAll_Click(object sender, EventArgs e)
+        {
+            RefreshGrid();
         }
     }
 }

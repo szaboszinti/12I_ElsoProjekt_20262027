@@ -41,6 +41,10 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnShowAll = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,7 +125,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(252, 167);
+            this.btnAdd.Location = new System.Drawing.Point(183, 163);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 9;
@@ -131,7 +135,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(381, 167);
+            this.btnDelete.Location = new System.Drawing.Point(284, 163);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 10;
@@ -142,7 +146,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(183, 228);
+            this.dataGridView1.Location = new System.Drawing.Point(146, 229);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(326, 183);
             this.dataGridView1.TabIndex = 11;
@@ -150,7 +154,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(492, 167);
+            this.btnEdit.Location = new System.Drawing.Point(381, 163);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 12;
@@ -158,11 +162,51 @@
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(489, 167);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(145, 20);
+            this.txtSearch.TabIndex = 13;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(477, 193);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 14;
+            this.btnSearch.Text = "Keresés";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnShowAll
+            // 
+            this.btnShowAll.Location = new System.Drawing.Point(572, 193);
+            this.btnShowAll.Name = "btnShowAll";
+            this.btnShowAll.Size = new System.Drawing.Size(75, 23);
+            this.btnShowAll.TabIndex = 15;
+            this.btnShowAll.Text = "Összes";
+            this.btnShowAll.UseVisualStyleBackColor = true;
+            this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(522, 151);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(77, 13);
+            this.lblSearch.TabIndex = 16;
+            this.lblSearch.Text = "Szoba keresés";
+            // 
             // RoomsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblSearch);
+            this.Controls.Add(this.btnShowAll);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnDelete);
@@ -200,5 +244,9 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnShowAll;
+        private System.Windows.Forms.Label lblSearch;
     }
 }
