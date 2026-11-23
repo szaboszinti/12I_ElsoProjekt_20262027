@@ -22,7 +22,7 @@ namespace projekt_
         private void RefreshGrid()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = hotel.Guests;
+            dataGridView1.DataSource = hotel.Guests.ToList();
         }
 
         private void GuestsForm_Load(object sender, EventArgs e)

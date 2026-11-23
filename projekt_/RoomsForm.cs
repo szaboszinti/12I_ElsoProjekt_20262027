@@ -23,7 +23,7 @@ namespace projekt_
         private void RefreshGrid()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = hotel.Rooms;
+            dataGridView1.DataSource = hotel.Rooms.ToList();
         }
 
         private void RoomsForm_Load(object sender, EventArgs e)
@@ -97,6 +97,9 @@ namespace projekt_
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
+                return;
+
+            if(dataGridView1.Rows[e.RowIndex].DataBoundItem == null)
                 return;
 
             Room selectedRoom =

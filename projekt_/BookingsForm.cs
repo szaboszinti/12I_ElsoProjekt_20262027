@@ -38,7 +38,7 @@ namespace projekt_
         private void RefreshGrid()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = hotel.Bookings;
+            dataGridView1.DataSource = hotel.Bookings.ToList();
         }
             
 
