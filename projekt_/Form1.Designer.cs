@@ -28,14 +28,15 @@
             this.btnBookings = new System.Windows.Forms.Button();
             this.btnStats = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnAvailableRooms = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.button1.Location = new System.Drawing.Point(70, 30);
+            this.button1.Location = new System.Drawing.Point(60, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(360, 70);
+            this.button1.Size = new System.Drawing.Size(309, 61);
             this.button1.TabIndex = 0;
             this.button1.Text = "Szobák";
             this.button1.UseVisualStyleBackColor = true;
@@ -44,9 +45,9 @@
             // btnGuest
             // 
             this.btnGuest.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.btnGuest.Location = new System.Drawing.Point(70, 120);
+            this.btnGuest.Location = new System.Drawing.Point(60, 104);
             this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(360, 70);
+            this.btnGuest.Size = new System.Drawing.Size(309, 61);
             this.btnGuest.TabIndex = 1;
             this.btnGuest.Text = "Vendégek";
             this.btnGuest.UseVisualStyleBackColor = true;
@@ -55,9 +56,9 @@
             // btnBookings
             // 
             this.btnBookings.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.btnBookings.Location = new System.Drawing.Point(70, 210);
+            this.btnBookings.Location = new System.Drawing.Point(60, 182);
             this.btnBookings.Name = "btnBookings";
-            this.btnBookings.Size = new System.Drawing.Size(360, 70);
+            this.btnBookings.Size = new System.Drawing.Size(309, 61);
             this.btnBookings.TabIndex = 2;
             this.btnBookings.Text = "Foglalások";
             this.btnBookings.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@
             // btnStats
             // 
             this.btnStats.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.btnStats.Location = new System.Drawing.Point(70, 300);
+            this.btnStats.Location = new System.Drawing.Point(60, 260);
             this.btnStats.Name = "btnStats";
-            this.btnStats.Size = new System.Drawing.Size(360, 70);
+            this.btnStats.Size = new System.Drawing.Size(309, 61);
             this.btnStats.TabIndex = 3;
             this.btnStats.Text = "Statisztika";
             this.btnStats.UseVisualStyleBackColor = true;
@@ -77,19 +78,31 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.btnSave.Location = new System.Drawing.Point(70, 390);
+            this.btnSave.Location = new System.Drawing.Point(60, 338);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(360, 70);
+            this.btnSave.Size = new System.Drawing.Size(309, 61);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Mentés";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
+            // btnAvailableRooms
+            // 
+            this.btnAvailableRooms.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.btnAvailableRooms.Location = new System.Drawing.Point(60, 426);
+            this.btnAvailableRooms.Name = "btnAvailableRooms";
+            this.btnAvailableRooms.Size = new System.Drawing.Size(309, 61);
+            this.btnAvailableRooms.TabIndex = 5;
+            this.btnAvailableRooms.Text = "Szabad szobák";
+            this.btnAvailableRooms.UseVisualStyleBackColor = true;
+            this.btnAvailableRooms.Click += new System.EventHandler(this.btnAvailableRooms_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 490);
+            this.ClientSize = new System.Drawing.Size(422, 529);
+            this.Controls.Add(this.btnAvailableRooms);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnBookings);
@@ -110,5 +123,6 @@
         private System.Windows.Forms.Button btnBookings;
         private System.Windows.Forms.Button btnStats;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnAvailableRooms;
     }
 }

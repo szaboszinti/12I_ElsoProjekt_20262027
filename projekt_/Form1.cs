@@ -57,5 +57,13 @@ namespace projekt_
                 "\nVendégek száma: " + hotel.Guests.Count +
                 "\nFoglalások száma: " + hotel.Bookings.Count);
         }
+
+        private void btnAvailableRooms_Click(object sender, EventArgs e)
+        {
+            AvailableRoomsForm arf =
+       new AvailableRoomsForm(hotel);
+
+            arf.Show();
+        }
     }
 }

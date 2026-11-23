@@ -61,10 +61,16 @@ namespace projekt_
             return nights * room.PricePerNight;
         }
 
-        public List<Room> GetAvailableRooms(DateTime from, DateTime to, int guestCount)
+        public List<Room> GetAvailableRooms(
+    DateTime from,
+    DateTime to,
+    int guestCount)
         {
             return Rooms
-                .Where(r => r.IsActive && r.Capacity >= guestCount && IsRoomAvailable(r.RoomNumber, from, to))
+                .Where(r =>
+                    r.IsActive &&
+                    r.Capacity >= guestCount &&
+                    IsRoomAvailable(r.RoomNumber, from, to))
                 .ToList();
         }
 

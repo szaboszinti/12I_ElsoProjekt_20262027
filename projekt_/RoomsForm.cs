@@ -44,6 +44,7 @@ namespace projekt_
             room.Capacity = int.Parse(txtCapacity.Text);
             room.PricePerNight = int.Parse(txtPricePerNight.Text);
             room.IsActive = chkActive.Checked;
+            room.Equipment = txtEquipment.Text;
             hotel.Rooms.Add(room);
             RefreshGrid();
         }
@@ -85,6 +86,8 @@ namespace projekt_
 
                 hotel.Rooms[index].IsActive =
                     chkActive.Checked;
+                hotel.Rooms[index].Equipment =
+                    txtEquipment.Text;
 
                 hotel.SaveAll();
 
@@ -119,6 +122,9 @@ namespace projekt_
 
             chkActive.Checked =
                 selectedRoom.IsActive;
+
+            txtEquipment.Text =
+                selectedRoom.Equipment;
         }
         
 
@@ -133,10 +139,12 @@ namespace projekt_
             dataGridView1.DataSource =
                 hotel.Rooms
                 .Where(r =>
-                    r.RoomType.ToLower().Contains(search)
-                    ||
-                    r.RoomNumber.ToString().Contains(search))
-                .ToList();
+                 r.RoomType.ToLower().Contains(search)
+        ||
+                    r.RoomNumber.ToString().Contains(search)
+        ||
+                    (r.Equipment ?? "").ToLower().Contains(search))
+                        .ToList();
         }
 
         private void btnShowAll_Click(object sender, EventArgs e)
