@@ -1,1 +1,1 @@
-[]
+[{"Id":1,"Name":"Kiss Anna","Phone":"+36 20 111 2222","Email":"kis.anna@gmail.com"},{"Id":2,"Name":"Nagy Antal","Phone":"+36 20 333 4444","Email":"knagy.antal@gmail.com"},{"Id":3,"Name":"Lantos Anita","Phone":"+36 20 555 6666","Email":"lantos.anita@gmail.com"},{"Id":4,"Name":"Kovács Máté","Phone":"+36 20 777 8888","Email":"kovacs.mate@gmail.com"},{"Id":5,"Name":"Havas Attila","Phone":"+36 20 999 0000","Email":"havas.attila@gmail.com"}]

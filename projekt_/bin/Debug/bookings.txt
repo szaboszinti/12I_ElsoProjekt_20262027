@@ -1,1 +1,1 @@
-[]
+[{"Id":1,"GuestId":5,"RoomNumber":10,"CheckIn":"2026-11-25T11:24:37","CheckOut":"2026-11-28T11:24:37","GuestCount":2,"Status":"Aktív","TotalPrice":24000},{"Id":2,"GuestId":3,"RoomNumber":1,"CheckIn":"2026-12-02T11:24:37","CheckOut":"2026-12-06T11:24:37","GuestCount":1,"Status":"Aktív","TotalPrice":20000}]
