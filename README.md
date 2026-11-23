@@ -73,7 +73,7 @@
       ha nincs fájl            -> üres lista
       ha hibás a fájl          -> hibaüzenet, üres lista
    Főmenü megjelenítése
-###2. FŐMENÜ (addig megy, amíg be nem zárod)
+### 2. FŐMENÜ (addig megy, amíg be nem zárod)
    Választható: Szobák / Vendégek / Foglalások /
                 Szabad szobák / Statisztika / Mentés
 ### 3. SZOBÁK (vendégeknél ugyanígy, csak más adatokkal)
